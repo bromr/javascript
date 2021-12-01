@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<button id="btn-1">Click me</button>
+<button id="btn-2">Or Click me</button>
+<div id="div"></div>
+<script>
+  window.addEventListener("load", init)
+
+  function init(event) {
+    // event.type represents the type of event being triggered
+    console.log("type of event:", event.type)
+    document.getElementById("btn-1").addEventListener("click", showId)
+    document.getElementById("btn-2").addEventListener("click", showId)
+  }
+  function showId(event) {
+    // event.target represents the element being triggered
+    let someButton = event.target
+    document.getElementById("div").innerHTML = someButton.id
+  }
+</script>
+</body>
+</html>

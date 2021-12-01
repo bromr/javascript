@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<button id="btn">Click me</button>
+<div id="div" style="padding: 10px"></div>
+<script>
+  let button = document.getElementById("btn")
+  let div = document.getElementById("div")
+
+  div.addEventListener("mouseover", function() {
+    div.style.backgroundColor = "yellow"
+    div.innerHTML = "You hovered over the div"
+  })
+
+  button.onclick = function () {
+    div.style.backgroundColor = "red"
+    div.innerHTML = "You clicked the button"
+  }
+
+</script>
+</body>
+</html>

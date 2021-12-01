@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="my-div">
+  First element
+</div>
+<p id="my-par">Second element</p>
+<script>
+  // the document object
+  let myDiv = document.getElementById("my-div")
+  myDiv.innerHTML = "This text was changed with JavaScript"
+
+  // the window object
+  let width = window.innerWidth
+  let myPar = document.getElementById("my-par")
+  myPar.innerHTML = width.toString()
+</script>
+</body>
+</html>

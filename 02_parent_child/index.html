@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<p>The first list</p>
+<ul id="parent">
+  <li class="odd">odd child</li>
+  <li class="even">even child</li>
+  <li class="odd">odd child</li>
+</ul>
+<p>The second list</p>
+<ul>
+  <li class="odd">Another odd element</li>
+</ul>
+<p>Number of odd children in the first list:</p>
+<p id="result"></p>
+<script>
+  // select only the odd children under the first div
+  let parent = document.getElementById("parent")
+  let oddChildren = parent.getElementsByClassName("odd")
+
+  // show number of children
+  let resultPar = document.getElementById("result")
+  resultPar.innerHTML = oddChildren.length.toString()
+</script>
+</body>
+</html>

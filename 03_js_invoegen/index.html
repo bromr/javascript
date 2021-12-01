@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <!--  This is an EXTERNAL script which is loaded BEFORE the page-->
+  <script src="script1.js"></script>
+</head>
+<body>
+<p id="my-par">This is a simple paragraph</p>
+<!--  This is an EXTERNAL script which is loaded AFTER the page-->
+<script src="script2.js"></script>
+<!--  This is an INTERNAL script which is loaded AFTER the page and the other scripts-->
+<script>
+  // some code ...
+  window.alert("script 3 loaded")
+</script>
+</body>
+</html>

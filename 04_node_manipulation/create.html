@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="start-div">
+  <p>This text was added with HTML</p>
+</div>
+
+<script>
+  let startDiv = document.getElementById("start-div")
+
+  // text node
+  let text = document.createTextNode("This text was added with JS")
+  // HTML element node (in this case a paragraph)
+  let element = document.createElement("p")
+  // add text to paragraph
+  element.appendChild(text)
+  // add paragraph to the end of the div
+  startDiv.appendChild(element)
+</script>
+</body>
+</html>

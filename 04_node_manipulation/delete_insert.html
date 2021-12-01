@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="parent">
+  <p id="child-1">1</p>
+  <p id="child-2">2</p>
+</div>
+<script>
+  let parent = document.getElementById("parent")
+  let child1 = document.getElementById("child-1")
+  let child2 = document.getElementById("child-2")
+  // remove child 2
+  parent.removeChild(child2)
+  // insert another child before child 1
+  let newChild = document.createElement("p")
+  newChild.innerHTML = "new child"
+  parent.insertBefore(newChild, child1)
+</script>
+</body>
+</html>

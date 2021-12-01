@@ -1,0 +1,21 @@
+body {
+  padding: 10px;
+}
+
+table {
+  padding: 10px 0;
+}
+
+tr {
+  background-color: aliceblue;
+}
+
+td {
+  padding: 10px;
+}
+
+.header {
+  font-weight: bold;
+  background-color: darkgray;
+  color:white;
+}
