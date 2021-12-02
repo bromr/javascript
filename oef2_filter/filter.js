@@ -15,4 +15,12 @@ function filter() {
   // - get all cells inside a row with 'row.cells' (also a list).
   // - change the visibility of a row with 'row.style.display'. Use either 'table row' or 'none'.
   // make sure to ask for help or search online if you have trouble using these properties and methods.
+    let search = document.getElementById("searchfield")
+    let list = document.getElementById("table-data")
+    let rows = list.table.rows
+    let cells = rows.cells
+    if (cells !== search){
+        rows.style.display === none
+    }
+
 }

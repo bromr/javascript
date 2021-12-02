@@ -24,7 +24,7 @@ function fillTable() {
     // https://www.w3schools.com/jsref/met_table_insertrow.asp
     // https://www.w3schools.com/jsref/met_tablerow_insertcell.asp
     const student = students[i]
-    let row = document.getElementByID("tableData").insertRow(-1)
+    let row = document.getElementById("tableData").insertRow(-1)
     let name = row.insertCell(1)
     let studies = row.insertCell(2)
     name.innerHTML = student.name

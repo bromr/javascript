@@ -6,3 +6,8 @@
  * - het ingevulde wachtwoord is de 'value' van het inputveld
  * - de 'sterkte' is de lengte van het wachtwoord
  */
+let password = document.getElementById("password")
+let meter = document.getElementById("security")
+document.addEventListener("input",function (){
+    meter.value = password.value.length
+})
